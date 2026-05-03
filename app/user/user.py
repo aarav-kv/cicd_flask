@@ -7,3 +7,8 @@ def login():
     session['user'] = "aarav"
     return jsonify({"login":"failed"})
  
+
+@user_bp.route("/", methods=["GET"])
+def hello():
+    return {"login":"Hey"}
+ 
